@@ -15,5 +15,6 @@ Imports:
     dplyr,
     reshape2,
     dsBase,
-    fANCOVA
+    fANCOVA,
+    rms
 RoxygenNote: 7.2.3
