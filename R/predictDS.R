@@ -45,7 +45,7 @@ predictDS <- function(fit = NULL,
     # Create the call to Predict
     pred_args <- c(
         list(
-            fit = model_obj,
+            object = model_obj,
             conf.int = conf.int,
             conf.type = conf.type[1]
         ),
