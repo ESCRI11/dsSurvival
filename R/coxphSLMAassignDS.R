@@ -216,6 +216,9 @@ coxphSLMAassignDS<-function(formula = NULL,
       # check if model oversaturated
       num_parameters  <- length(cxph_serverside$coefficients)
       num_data_points <- cxph_serverside$n
+      if (length(num_data_points) > 1) {
+            num_data_points <- num_data_points[1] + num_data_points[2]
+      }
       
       # if number of parameters greater than 0.2 * number of data points, then error
       if(num_parameters > (nfilter.glm * num_data_points) )
