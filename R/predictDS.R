@@ -10,6 +10,7 @@
 #' @param type type of predictions
 #' @param conf.int confidence level (0-1)
 #' @param conf.type type of confidence interval
+#' @param ref.zero logical; if TRUE, predictions are centered at a reference value
 #' @return a prediction object from rms::Predict
 #' @author [Your Name], 2024
 #' @export
@@ -19,7 +20,8 @@ predictDS <- function(fit = NULL,
                      fun = NULL,
                      type = NULL,
                      conf.int = 0.95,
-                     conf.type = c("mean", "individual")) {
+                     conf.type = c("mean", "individual"),
+                     ref.zero = FALSE) {
     
     # Check if the model object exists
     if (!exists(fit)) {
@@ -47,7 +49,8 @@ predictDS <- function(fit = NULL,
         list(
             object = model_obj,
             conf.int = conf.int,
-            conf.type = conf.type[1]
+            conf.type = conf.type[1],
+            ref.zero = ref.zero
         ),
         pred_spec
     )
