@@ -10,4 +10,5 @@ AggregateMethods:
 AssignMethods:
     coxphSLMAassignDS,
     SurvDS,
-    survfitDS
+    survfitDS,
+    predictDS
