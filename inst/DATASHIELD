@@ -11,4 +11,5 @@ AssignMethods:
     coxphSLMAassignDS,
     SurvDS,
     survfitDS,
-    predictDS
+    predictDS,
+    datadistDS
