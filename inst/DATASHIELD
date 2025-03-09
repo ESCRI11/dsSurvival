@@ -5,8 +5,10 @@ AggregateMethods:
     summarySurvDS,
     plotsurvfitDS,
     vcovDS.coxph,
-    life.tableDS
+    life.tableDS,
+    return.ds
 AssignMethods:
     coxphSLMAassignDS,
     SurvDS,
-    survfitDS
+    survfitDS,
+    predictDS
