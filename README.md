@@ -77,6 +77,7 @@ install.packages('metafor')
 install.packages('DSOpal')
 install.packages('DSI')
 install.packages('opalr')
+install.packages('patchwork')
 ```
 
 
@@ -168,7 +169,7 @@ or
 
 library(devtools)
 
-devtools::install_github('neelsoumya/dsSurvivalClient@v2.0.0')
+devtools::install_github('neelsoumya/dsSurvivalClient@v2.1.3')
 
 ```
 
@@ -189,6 +190,10 @@ For polished publication ready plots, use the following script `forestplot_FINAL
 
    https://github.com/neelsoumya/dsSurvival/blob/main/forestplot_FINAL.R
    
+or the script `simple_script.R`
+
+https://github.com/neelsoumya/dsSurvival/blob/main/vignettes/simple_script.R
+   
 If you want to plot survival curves or Kaplan-Meier curves, see the following link:
 
 https://neelsoumya.github.io/dsSurvivalbookdown/computational-workflow.html#plotting-of-privacy-preserving-survival-curves
@@ -208,7 +213,7 @@ https://github.com/neelsoumya/dsMiscellaneous
 v1.0.0: A basic first release of survival models in DataSHIELD. This release has Cox proportional hazards models, summaries of models, diagnostics and the ability to meta-analyze hazard ratios. There is also capability to generate forest plots of meta-analyzed hazard ratios. This release supports study-level meta-analysis (SLMA).
 
 
-A shiny graphical user interface for building survival models in DataSHIELD has also been created by Xavier Escriba Montagut and Juan Gonzalez. It uses dsSurvival and dsSurvivalClient.
+A shiny graphical user interface for building survival models in DataSHIELD has also been created by Xavier Escriba Montagut and Juan Gonzalez. It uses `dsSurvival` and `dsSurvivalClient`.
 
 
 * https://github.com/isglobal-brge/ShinyDataSHIELD
@@ -229,6 +234,8 @@ v2.1.0: This has vcov() functionality.
 v2.1.1: This has minor fixes.
 
 v2.1.2: This has minor fixes.
+
+v2.1.3: This has minor fixes, fixes for plotting of a stratified survival analysis and use of ggplot in plotting survival curves.
 
 
 ## Acknowledgements
@@ -288,9 +295,24 @@ year = {2022}
 
 
 
+
+
 or see the CITATION.cff file created using
 
 https://citation-file-format.github.io/cff-initializer-javascript/
 
 -->
+
+## Publications
+
+The following publications describe `dsSurvival`
+
+Banerjee, S., Sofack, G.N., Papakonstantinou, T. et al. dsSurvival: Privacy preserving survival models for federated individual patient meta-analysis in DataSHIELD. BMC Res Notes 15, 197 (2022). https://doi.org/10.1186/s13104-022-06085-1
+
+Banerjee, S., Bishop, T.R.P. dsSurvival 2.0: privacy enhancing survival curves for survival models in the federated DataSHIELD analysis system. BMC Res Notes 16, 98 (2023). https://doi.org/10.1186/s13104-023-06372-5
+
+
+If you use the code, please cite the following manuscript:
+
+Banerjee, S., Sofack, G.N., Papakonstantinou, T. et al. dsSurvival: Privacy preserving survival models for federated individual patient meta-analysis in DataSHIELD. BMC Res Notes 15, 197 (2022). https://doi.org/10.1186/s13104-022-06085-1
 
