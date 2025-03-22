@@ -8,3 +8,14 @@ https://neelsoumya.github.io/dsSurvivalbookdown/
 and
 
 https://neelsoumya.github.io/dsSurvival_bookdown/
+
+and in `vignette_MRCserver.pdf`
+
+
+
+See the script `simple_script.R` for a simple script that can be run with only client-side installations:
+
+https://github.com/neelsoumya/dsSurvival/blob/main/vignettes/simple_script.R
+
+
+Good forest plots can be generated using the script `forestplot_FINAL.R`
