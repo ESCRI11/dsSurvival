@@ -11,7 +11,8 @@ predictDS(
   fun = NULL,
   type = NULL,
   conf.int = 0.95,
-  conf.type = c("mean", "individual")
+  conf.type = c("mean", "individual"),
+  ref.zero = FALSE
 )
 }
 \arguments{
@@ -28,6 +29,8 @@ predictDS(
 \item{conf.int}{confidence level (0-1)}
 
 \item{conf.type}{type of confidence interval}
+
+\item{ref.zero}{logical; if TRUE, predictions are centered at a reference value}
 }
 \value{
 a prediction object from rms::Predict
