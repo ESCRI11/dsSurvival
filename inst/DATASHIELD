@@ -12,4 +12,5 @@ AssignMethods:
     SurvDS,
     survfitDS,
     predictDS,
-    datadistDS
+    datadistDS,
+    rcsDS
