@@ -17,7 +17,7 @@ useDatadistDS <- function(datadist = NULL) {
     stop("The provided object is not a datadist object", call. = FALSE)
   }
 
-  eval(parse(text = paste0("options(datadist = ", datadist, ")")), envir = parent.frame())
+  eval(parse(text = paste0("options(datadist = '", datadist, "')")), envir = parent.frame())
 
   return(TRUE)
 }
